@@ -3,7 +3,7 @@ export default function Projects() {
     {
       name: "Actual vs Budget forcasting",
       image: "Images/img1.png",
-      lang: ["Power Bi", "Excel", "DAX Function"],
+      tools: ["Power Bi", "Excel", "DAX Function"],
       des: `Analyzed the relationship between Cash Conversion Cycle components and working capital efficiency with focus on
              inventory turnover, accounts receivable, and accounts payable management
             Applied statistical techniques including correlation and regression analysis to quantify relationships between CCC
@@ -44,7 +44,7 @@ export default function Projects() {
                   </p>
                 </div>
                 <div className="md:flex flex p-4 gap-3 md:p-4 md:gap-3">
-                  {prj.lang.map((tool, idx) => (
+                  {prj.tools.map((tool, idx) => (
                     <div className="lang" key={idx}>    
                     <span className="px-2.5 py-1 text-xs font-semibold  rounded-full bg-emerald-900/60 text-emerald-300">
                         {tool}
